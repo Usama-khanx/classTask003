@@ -59,4 +59,8 @@ button{
     box-shadow: 0 0 4px 5px rgba(247, 230, 230, 0.402);
     letter-spacing: 3px;
 }
+button:hover{
+background-color: black;
+color: white;
+}
 
