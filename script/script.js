@@ -6,7 +6,7 @@ var button_3 = document.getElementById("q_1_b_3");
 var button_4 = document.getElementById("q_1_b_4");
 var scoring = 0;
 var questions = ["What is the capital of pakistan", "islamabad", "peshawar", "Multan", "karachi"]
-var question_1 = document.getElementById("question-no-2").innerHTML = questions[0];
+var question_1 = document.getElementById("question-no-1").innerHTML = questions[0];
 var ans;
 for (var i = 0; i < questions.length; i++) {
     if (questions[i] === "islamabad") {
@@ -36,7 +36,7 @@ var button_3 = document.getElementById("q_2_b_3");
 var button_4 = document.getElementById("q_2_b_4");
 var scoring = 0;
 var questions = ["What is the capital of india", "Delhi", "mumbai", "kolkatta", "kerala"]
-var question_1 = document.getElementById("question-no-1").innerHTML = questions[0];
+var question_1 = document.getElementById("question-no-2").innerHTML = questions[0];
 var ans;
 for (var i = 0; i < questions.length; i++) {
     if (questions[i] === "Delhi") {
