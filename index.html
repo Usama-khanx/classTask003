@@ -5,132 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiizz</title>
-    
+
+    <link rel="stylesheet" href="./stylesheet/style.css">
+
 </head>
 
 <body>
 
 
-    <p>Total score</p><span class="score"> 0</span>
+    <h1 class="quizz-heading">Quiz</h1>
 
+    <div class="scoring">
+        <p>Total score: </p><span class="score"> 0</span>
+    </div>
+    
+<div class="container">
 
-    <h2 id="question-no-1"></h2>
+    <div class="sepatate">
 
-    <button id="q_1_b_1">islamabad</button>
-    <button id="q_1_b_2">peshawar</button>
-    <button id="q_1_b_3">Multan</button>
-    <button id="q_1_b_4">karachi</button>
+        <h2 id="question-no-1" class="question"></h2>
+        <div class="answer-button">
+            
+            <button id="q_1_b_1" onclick="correct(this)">islamabad</button>
+            <button id="q_1_b_2" onclick="incorrect(this)">peshawar</button>
+            <button id="q_1_b_3" onclick="incorrect(this)">Multan</button>
+            <button id="q_1_b_4" onclick="incorrect(this)">karachi</button>
+        </div>
+    </div>
 
     <!-- question 2 -->
-    <h2 id="question-no-2"></h2>
+     <div class="sepatate">
 
-    <button id="q_2_b_1">Delhi</button>
-    <button id="q_2_b_2">mumbai</button>
-    <button id="q_2_b_3">kolkata</button>
-    <button id="q_2_b_4">kerala</button>
-
+         <h2 id="question-no-2" class="question"></h2>
+         <div class="answer-button">
+             <button id="q_2_b_1" onclick="correct(this)">Delhi</button>
+             <button id="q_2_b_2" onclick="incorrect(this)">mumbai</button>
+             <button id="q_2_b_3" onclick="incorrect(this)">kolkata</button>
+             <button id="q_2_b_4" onclick="incorrect(this)">kerala</button>
+            </div>
+        </div>
     <!-- question 3 -->
+    <div class="sepatate">
 
-    <!-- question 2 -->
-    <h2 id="question-no-3"></h2>
-
-    <button id="q_3_b_1">Peshawar</button>
-    <button id="q_3_b_2">bannu</button>
-    <button id="q_3_b_3">karak</button>
-    <button id="q_3_b_4">kohat</button>
-
-    <script>
-        // question 1 start
-        var button_1 = document.getElementById("q_1_b_1");
-        var button_2 = document.getElementById("q_1_b_2");
-        var button_3 = document.getElementById("q_1_b_3");
-        var button_4 = document.getElementById("q_1_b_4");
-        var scoring = 0;
-        var questions = ["What is the capital of pakistan", "islamabad", "peshawar", "Multan", "karachi"]
-        var question_1 = document.getElementById("question-no-2").innerHTML = questions[0];
-        var ans;
-        for (var i = 0; i < questions.length; i++) {
-            if (questions[i] === "islamabad") {
-                button_1.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring = scoring + 10;
-                })
-            }
-            else {
-                button_2.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-
-                button_3.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-
-                button_4.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-            }
-        }
-
-        // question-2
-        var button_1 = document.getElementById("q_2_b_1");
-        var button_2 = document.getElementById("q_2_b_2");
-        var button_3 = document.getElementById("q_2_b_3");
-        var button_4 = document.getElementById("q_2_b_4");
-        var scoring = 0;
-        var questions = ["What is the capital of india", "Delhi", "mumbai", "kolkatta", "kerala"]
-        var question_1 = document.getElementById("question-no-1").innerHTML = questions[0];
-        var ans;
-        for (var i = 0; i < questions.length; i++) {
-            if (questions[i] === "Delhi") {
-                button_1.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring = scoring + 10;
-                })
-            }
-            else {
-                button_2.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-
-                button_3.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-
-                button_4.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-            }
-        }
-
-        // question-3
-        var button_1 = document.getElementById("q_3_b_1");
-        var button_2 = document.getElementById("q_3_b_2");
-        var button_3 = document.getElementById("q_3_b_3");
-        var button_4 = document.getElementById("q_3_b_4");
-        var scoring = 0;
-        var questions = ["What is the capital of KpK", "Peshawar", "bannu", "karak", "kohat"]
-        var question_1 = document.getElementById("question-no-3").innerHTML = questions[0];
-        var ans;
-        for (var i = 0; i < questions.length; i++) {
-            if (questions[i] === "Peshawar") {
-                button_1.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring = scoring + 10;
-                })
-            }
-            else {
-                button_2.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-
-                button_3.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-
-                button_4.addEventListener('click', () => {
-                    document.querySelector('.score').innerHTML = scoring;
-                })
-            }
-        }
-    </script>
-
+        <h2 id="question-no-3" class="question"></h2>
+        <div class="answer-button">
+            <button id="q_3_b_1" onclick="correct(this)">Peshawar</button>
+            <button id="q_3_b_2" onclick="incorrect(this)">bannu</button>
+    <button id="q_3_b_3" onclick="incorrect(this)">karak</button>
+    <button id="q_3_b_4" onclick="incorrect(this)">kohat</button>
+</div>
+</div>
+</div>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>

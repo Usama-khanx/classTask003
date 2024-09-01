@@ -13,48 +13,50 @@
 body{
     background-color: rgba(49, 78, 79, 0.121);
 }
-.mcqs-btn{
+
+.quizz-heading{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 32px;
+}
+.scoring{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    margin-top: 32px;
-    padding: 22px;
-    
-}
-.mcqs-btn button{
-    margin: 12px;
-    padding: 12px;
-    border-radius: 12px;
-    border: none;
-    background-color: rgba(133, 219, 219, 0.815);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 22px;
 }
 
-.question-1{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-top: 12px;
-font-family: cursive;
-font-size: 12px;
-background-color: aliceblue;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 48px 0;
 }
-.question-1 button:hover{
-    box-shadow: 2px 3px 5px 6px wheat;
+.sepatate{
+   
+    box-shadow: 0 0 12px 12px rgba(152, 199, 202, 0.82);
+    padding: 22px 22px;
+    margin: 22px 0;
+    background-color: rgb(100, 220, 220);
 }
-.question-1 button, h2{
-    padding: 7px;
-    margin: 12px;
+.question{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h2{
-    background-color: rgba(206, 228, 228, 0.614);
+.answer-button{
+    
+    padding: 22px 22px;
+    margin: 12px 12px;
 }
-button {
+button{
+    padding: 13px;
     border: none;
     outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 5px rgba(247, 230, 230, 0.402);
     letter-spacing: 3px;
-    font-size: 14px;
-    background-color: rgba(8, 230, 148, 0.765);
-    border-radius: 12px;
 }
+
