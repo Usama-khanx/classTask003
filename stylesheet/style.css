@@ -35,15 +35,15 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: bisque;
+    background-color: #10111130;
     padding: 48px 0;
 }
 .sepatate{
    
-    box-shadow: 0 0 12px 12px rgba(152, 199, 202, 0.82);
+    box-shadow: 0 0 12px 12px rgb(42 47 49 / 11%);
     padding: 22px 22px;
     margin: 22px 0;
-    background-color: rgb(100, 220, 220);
+    background-color: rgb(178 170 192 / 58%);
 }
 .question{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -58,7 +58,9 @@ button{
     border: none;
     outline: none;
     border-radius: 8px;
-    box-shadow: 0 0 4px 5px rgba(247, 230, 230, 0.402);
+    box-shadow: 0 0 4px 5px #7c7d8d69;
+    background-color: #0e0f0feb;
+    color: white;
     letter-spacing: 3px;
 }
 button:hover{
