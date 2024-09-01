@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task 03</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
 </head>
+
 <body>
-    <h3>hello</h3>
+
+    <h1 id="quiz-heading">Quiz</h1>
+    <div class="mcqs-btn">
+
+        <button id="btn-1">Multiple</button>
+        <button id="btn-2">Choice</button>
+        <button id="btn-3">Questions</button>
+    </div>
+
+    <div class="question-1">
+        <h2>what is the capital of pakistan</h2>
+        <div>
+
+            <button onclick="Correct(this);">
+                islamabad
+
+            </button>
+            <button onclick="incorrect(this);">
+                karachi
+
+            </button>
+            <button onclick="incorrect(this);">
+                multan
+
+            </button>
+            <button onclick="incorrect(this);">
+                peshawar
+
+            </button>
+        </div>
+
+        <div>
+            <h3>Total score:</h3>
+            
+            <a href="#q-2"><button>Next question</button></a>
+        </div>
+        
+    </div>
+
+
+    
+    <div class="question-1">
+        <h2 id="q-2">what is the capital of India</h2>
+        <div>
+
+            <button onclick="Correct(this);">
+                Delhi
+
+            </button>
+            <button onclick="incorrect(this);">
+                Mumbai
+
+            </button>
+            <button onclick="incorrect(this);">
+                kolkatta
+
+            </button>
+            <button onclick="incorrect(this);">
+                kerala
+
+            </button>
+        </div>
+
+        <div>
+            <h3>Total score:</h3>
+            
+            <a href="#q-3"><button>Next question</button></a>
+        </div>
+        
+    </div>
+
+
+
+    <!-- question 3 -->
+
+     
+    <div class="question-1">
+        <h2 id="q-2">what is the capital of Kpk</h2>
+        <div>
+
+            <button onclick="Correct(this);">
+                Peshawar
+
+            </button>
+            <button onclick="incorrect(this);">
+                Bannu
+
+            </button>
+            <button onclick="incorrect(this);">
+                Karak
+
+            </button>
+            <button onclick="incorrect(this);">
+                Lakki Marwar
+
+            </button>
+        </div>
+
+        <div>
+            <h3>Total score:</h3>
+            
+            <a href="#q-3"><button>Next question</button></a>
+        </div>
+        
+    </div>
+
+
+    <script>
+        function incorrect(usama){
+            alert("Sorry incorred try Next time")
+            usama.style.backgroundColor = 'red';
+        }
+        function Correct(usama){
+            alert("Correct Answer")
+            usama.style.backgroundColor = 'green';
+        }
+    </script>
+    <script src="./script/script.js"></script>
 </body>
+
 </html>
