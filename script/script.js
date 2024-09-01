@@ -5,7 +5,7 @@ var button_2 = document.getElementById("q_1_b_2");
 var button_3 = document.getElementById("q_1_b_3");
 var button_4 = document.getElementById("q_1_b_4");
 var scoring = 0;
-var questions = ["What is the capital of pakistan", "islamabad", "peshawar", "Multan", "karachi"]
+var questions = ["What is the capital of pakistan", "islamabad", "peshawar", "Multan", "quetta"]
 var question_1 = document.getElementById("question-no-1").innerHTML = questions[0];
 var ans;
 for (var i = 0; i < questions.length; i++) {
@@ -35,7 +35,7 @@ var button_2 = document.getElementById("q_2_b_2");
 var button_3 = document.getElementById("q_2_b_3");
 var button_4 = document.getElementById("q_2_b_4");
 var scoring = 0;
-var questions = ["What is the capital of india", "Delhi", "mumbai", "kolkatta", "kerala"]
+var questions = ["What is the capital City of india", "Delhi", "mumbai", "kolkatta", "PathanQoot"]
 var question_1 = document.getElementById("question-no-2").innerHTML = questions[0];
 var ans;
 for (var i = 0; i < questions.length; i++) {
@@ -65,11 +65,11 @@ var button_2 = document.getElementById("q_3_b_2");
 var button_3 = document.getElementById("q_3_b_3");
 var button_4 = document.getElementById("q_3_b_4");
 var scoring = 0;
-var questions = ["What is the capital of KpK", "Peshawar", "bannu", "karak", "kohat"]
+var questions = ["Which of The Following is Asian Country", "Pakistan", "Japan", "Australia", "France"]
 var question_1 = document.getElementById("question-no-3").innerHTML = questions[0];
 var ans;
 for (var i = 0; i < questions.length; i++) {
-    if (questions[i] === "Peshawar") {
+    if (questions[i] === "Pakistan") {
         button_1.addEventListener('click', () => {
             document.querySelector('.score').innerHTML = scoring = scoring + 10;
         })

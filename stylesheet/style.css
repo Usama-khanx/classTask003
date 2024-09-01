@@ -28,6 +28,7 @@ body{
     margin-top: 22px;
     background-color: rgba(107, 37, 37, 0.112);
     padding: 23px 0;
+    border-radius: 12px;
 }
 
 .container{
@@ -37,6 +38,7 @@ body{
     flex-direction: column;
     background-color: #10111130;
     padding: 48px 0;
+    margin-top: 22px;
 }
 .sepatate{
    
@@ -47,7 +49,6 @@ body{
 }
 .question{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
     text-shadow: 2px 2px 4px rgb(255 255 255);
 }
 .answer-button{
@@ -70,5 +71,28 @@ button:hover{
 background-color: black;
 color: white;
 transform: translateY(-2px) scale(1.03);
+}
+.next-question-btn{
+    
+    text-decoration: none;
+   
+}
+
+.next-question-btn button{
+    background-color: pink;
+    color: black;
+  
+    display: block;
+    margin: 0 auto;
+}
+
+@media(max-width:515px){
+
+   .answer-button{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 16px;
+   }
 }
 
