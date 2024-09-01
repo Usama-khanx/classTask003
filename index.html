@@ -19,10 +19,10 @@
     </div>
 
     <div class="question-1">
-        <h2>what is the capital of pakistan</h2>
+        <h2 id="q-1">what is the capital of pakistan</h2>
         <div>
 
-            <button onclick="Correct(this);">
+            <button id="isl" onclick="Correct(this);">
                 islamabad
 
             </button>
@@ -41,7 +41,7 @@
         </div>
 
         <div>
-            <h3>Total score:</h3>
+            <h3 id="total" class="total">Total score:</h3>
             
             <a href="#q-2"><button>Next question</button></a>
         </div>
@@ -73,7 +73,7 @@
         </div>
 
         <div>
-            <h3>Total score:</h3>
+            <h3 class="total">Total score:</h3>
             
             <a href="#q-3"><button>Next question</button></a>
         </div>
@@ -86,7 +86,7 @@
 
      
     <div class="question-1">
-        <h2 id="q-2">what is the capital of Kpk</h2>
+        <h2 id="q-3">what is the capital of Kpk</h2>
         <div>
 
             <button onclick="Correct(this);">
@@ -108,9 +108,9 @@
         </div>
 
         <div>
-            <h3>Total score:</h3>
+            <h3 class="total">Total score:</h3>
             
-            <a href="#q-3"><button>Next question</button></a>
+            <!-- <a href="#q-3"><button>Next question</button></a> -->
         </div>
         
     </div>
@@ -125,6 +125,25 @@
             alert("Correct Answer")
             usama.style.backgroundColor = 'green';
         }
+
+
+
+        function scoring(){
+           
+
+            var totalScore = document.getElementsByClassName('total')
+
+            var que_1 = document.getElementById('q-1')
+            var correctAnswer = document.getElementById('isl');
+            if(que_1 === correctAnswer){
+                total_score = total_score + 10;
+                document.write(totalScore)
+            }else{
+                
+            }
+        }
+        
+        
     </script>
     <script src="./script/script.js"></script>
 </body>
